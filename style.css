@@ -1,3 +1,78 @@
-* {
-    background-color: aqua;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: #151515;
+    height: 83px;
+    color: #F9F9F9;
+    font-size: 110%;
+    font-weight: bold;
+    display: flex;
+    padding: 12px 0 0 30px;
+    box-sizing: border-box;
+}
+
+header img {
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+main {
+    font-size: 60%;
+    font-weight: bold;
+    text-align: center;
+    padding: 5% 5%;
+    box-sizing: border-box;
+}
+
+#generated-name {
+    color: #656565;
+    font-size: 550%;
+}
+
+button {
+    color: #FFFFFF;
+    height: 75px;
+    width: 180px;
+    font-weight: bold;    
+    font-size: 150%;
+    border: 0;
+    border-radius: 5px;
+    margin: 15px;
+    /*Nota: Centrar verticalmente las palabras*/
+}
+
+/*Nota: Añadir hover a los botones */
+
+button img {
+    height: 50%;
+}
+
+#man-button {
+    background-color: #6456FF;
+}
+
+#woman-button {
+    background-color: #F85EFB;
+}
+
+#general-button {
+    background-color: #FB4040;
+}
+
+footer {
+    background-color: #ECECEC;
+    height: 64px;
+    width: 100%;
+    color: #C1C1C1;
+    font-size: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px 0 40px;
+    box-sizing: border-box;
+    /*Nota: Arreglar el footer*/
 }
