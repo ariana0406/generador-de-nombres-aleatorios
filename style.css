@@ -1,55 +1,72 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Oxanium", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     background-color: #151515;
     height: 83px;
     color: #F9F9F9;
-    font-size: 110%;
+    font-size: 0.6rem;
     font-weight: bold;
     display: flex;
-    padding: 12px 0 0 30px;
-    box-sizing: border-box;
+    align-items: center;
+    padding-left: 30px;
 }
 
 header img {
-    height: 35px;
-    margin-top: 10px;
-    margin-left: 10px;
+    height: 30px;
+    margin-left: 15px;
 }
 
 main {
-    font-size: 60%;
+    font-size: 0.9rem;
     font-weight: bold;
     text-align: center;
     padding: 5% 5%;
     box-sizing: border-box;
+    flex: 1;
 }
 
 #generated-name {
     color: #656565;
-    font-size: 550%;
+    font-size: 3.4rem;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 button {
     color: #FFFFFF;
-    height: 75px;
-    width: 180px;
+    height: 60px;
+    width: 100%;
+    max-width: 170px;
     font-weight: bold;    
-    font-size: 150%;
+    font-size: 1.2rem;
+    font-family: "Oxanium", sans-serif;
     border: 0;
-    border-radius: 5px;
+    border-radius: 9px;
     margin: 15px;
-    /*Nota: Centrar verticalmente las palabras*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/*Nota: Añadir hover a los botones */
+button:hover {
+    opacity: 0.85;
+    transform: scale(1.02);
+}
 
 button img {
-    height: 50%;
+    height: 45%;
+    margin-left: 15px;
 }
 
 #man-button {
@@ -67,12 +84,26 @@ button img {
 footer {
     background-color: #ECECEC;
     height: 64px;
-    width: 100%;
     color: #C1C1C1;
-    font-size: 80%;
+    font-size: 0.8rem;
     display: flex;
     justify-content: space-between;
-    padding: 10px 40px 0 40px;
+    align-items: center;
+    padding: 0 40px;
     box-sizing: border-box;
-    /*Nota: Arreglar el footer*/
+}
+
+@media (max-width: 600px) {
+
+    html {
+        font-size: 14px;
+    }
+    
+    .buttons {
+        flex-direction: column;
+    }
+
+    header { 
+        justify-content: center;
+    }
 }
